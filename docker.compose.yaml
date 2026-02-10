@@ -1,12 +1,13 @@
 services:
-    app:
-      build:
-        context: .
-        dockerfile: Dockerfile
-      container_nama: porto
-      restart: always
-      ports:
-       - "3001:3001"
-      environment:
-       - NODE_ENV=production
-       - PORT=3001
+  app:
+    image: portofolio2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: porto
+    restart: always
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
