@@ -1,11 +1,8 @@
 services:
   app:
     image: portofolio2
-    build:
-      context: .
-      dockerfile: Dockerfile
     container_name: porto
+    build: .
     restart: always
     ports:
       - "3001:80"
-
