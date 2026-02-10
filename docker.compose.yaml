@@ -1,0 +1,19 @@
+services:
+    app:
+      build:
+        context: .
+        dokerfile: Dokerfile
+      container_nama: porto
+      restart: always
+      ports:
+       - "3001:3001"
+      evironment:
+       - NODE_ENV=production
+       - PORT=3001
+
+cretbot:
+    image: certbot/certbot:latest
+    container_nama: porto_certbot
+    volume:
+     - ./certbot/conf:/etc/letsencrypt
+     - ./certbot/www:/var/www/certbot

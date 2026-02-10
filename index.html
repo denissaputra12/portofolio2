@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Dynis Saputra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: #fff; }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 { font-size: 3rem; font-weight: 700; }
+    header span { color: #00e5ff; }
+    header p { margin: 20px 0; font-size: 1.1rem; opacity: 0.85; }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background: #00e5ff;
+      color: #000;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover { transform: scale(1.05); background: #00bcd4; }
+
+    section { padding: 80px 10%; }
+
+    .title { text-align: center; margin-bottom: 50px; }
+    .title h2 { font-size: 2.2rem; }
+    .title p { opacity: 0.7; }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-10px); }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .skill {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0,0,0,0.3);
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div>
+      <h1>Halo, Saya <span>Dynis Saputra</span></h1>
+      <p>Web Developer • UI Designer • Pelajar RPL</p>
+      <a href="#about" class="btn">Lihat Portofolio</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="title">
+      <h2>Tentang Saya</h2>
+      <p>Kenalan singkat tentang saya</p>
+    </div>
+    <div class="about">
+      <div class="card">
+        <h3>Siapa Saya?</h3>
+        <p>Saya adalah pelajar RPL yang tertarik pada dunia web development dan desain UI modern. Saya suka membuat tampilan website yang estetik, rapi, dan nyaman dilihat.</p>
+      </div>
+      <div class="card">
+        <h3>Tujuan</h3>
+        <p>Mengembangkan skill programming dan desain agar bisa menjadi developer profesional dan membuat aplikasi yang bermanfaat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <div class="title">
+      <h2>Skill</h2>
+      <p>Teknologi yang saya kuasai</p>
+    </div>
+    <div class="skills">
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">PHP</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Docker</div>
+      <div class="skill">UI Design</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <div class="title">
+      <h2>Proyek</h2>
+      <p>Beberapa hasil karya saya</p>
+    </div>
+    <div class="projects">
+      <div class="card">
+        <h3>Website Perpustakaan</h3>
+        <p>Aplikasi web perpustakaan dengan PHP & MySQL.</p>
+      </div>
+      <div class="card">
+        <h3>Dashboard Sekolah</h3>
+        <p>Dashboard admin sekolah dengan tampilan modern.</p>
+      </div>
+      <div class="card">
+        <h3>Landing Page</h3>
+        <p>Landing page estetik dan responsif.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Dynis Saputra | Portofolio</p>
+  </footer>
+
+</body>
+</html>
